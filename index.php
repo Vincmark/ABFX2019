@@ -10,10 +10,12 @@ echo 'GOOD request: ' . $uri;
 echo '<pre>';
 print_r(get_defined_vars());
 echo '</pre>';
-} else if ($uri == '/home') {
+} else if ($uri == '/') {
     require("views/home.php");
-} else if ($uri == '/login') {
-require("controllers/login.php");
+} else if ($uri == '/privacy-policy') {
+    require("views/privacy_policy.php");
+} else if ($uri == '/terms-of-use') {
+    require("views/terms_of_use.php");
 } else {
 echo "404";
 }

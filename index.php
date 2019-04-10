@@ -1,6 +1,7 @@
 <?php
 
 $cssPath='views/css/';
+$jsPath='views/js/';
 $imgPath='views/img/';
 $pageTitle='ABFX';
 $uri = $_SERVER['REQUEST_URI'];

@@ -6,7 +6,7 @@
                 <p class="footer-upper__descriptor">We develop websites and web applications since 2005.</p>
             </div>
             <div class="footer-upper__col2">
-                <h2 class="footer-upper__header">We are hiring</h2>
+                <h2 class="footer-upper__header footer-upper__header_offset">We are hiring</h2>
                 <ul class="footer-upper__hiring-list">
                     <li class="footer-upper__hiring-item"><a class="footer-upper__link" href="/jobs/php-developer">PHP Developer</a></li>
                     <li class="footer-upper__hiring-item"><a class="footer-upper__link" href="/jobs/frontend-developer">Frontend Developer</a></li>
@@ -54,8 +54,12 @@
         <section class="footer-lower">
             <p class="footer-lower__copyright">© Copyright, 2005-<?php echo date('Y') ?></p>
             <img class="footer-lower__separator-rect" src="<?php echo $imgPath . 'gray-rect.svg' ?>" alt="Footer separator">
-            <a class="footer-lower__link" href="terms-of-use">Terms of use</a>
-            <a class="footer-lower__link" href="privacy-policy">Privacy policy</a>
+            <div class="footer-lower__links-group">
+                <a class="footer-lower__link" href="terms-of-use">Terms of use</a>
+                <a class="footer-lower__link" href="privacy-policy">Privacy policy</a>
+            </div>
         </section>
     </div>
 </footer>
+
+<div class="overlay"></div>

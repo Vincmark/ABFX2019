@@ -17,6 +17,8 @@ echo '</pre>';
     require("views/privacy_policy.php");
 } else if ($uri == '/terms-of-use') {
     require("views/terms_of_use.php");
+} else if ($uri == '/contact-request') {
+    require("views/contact-request.php");
 } else {
 echo "404";
 }

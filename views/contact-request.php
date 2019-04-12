@@ -5,11 +5,14 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+echo "OK";
+die();
+
 //    echo "INSERT INTO requests (name, email, message) VALUES (\"$name\", \"email\", \"message\");";
 //    die();
 
 
-$servername = "localhost";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "abfx";

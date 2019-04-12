@@ -30,6 +30,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -484,11 +485,12 @@ input[type="radio"].visually-hidden {
     left:50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    max-width: 690px;
+    width: calc(100% - 60px);
 }
 .request-popup-wrapper {
     position: relative;
     padding: 40px;
-    max-width: 690px;
     margin: 0 auto;
 }
 
@@ -535,13 +537,10 @@ input[type="radio"].visually-hidden {
 .request-popup__close-button {
     margin: 0 auto;
     color: #424242;
-    min-width: 330px;
+    max-width: 330px;
+    /*min-width: 330px;*/
+    width: 100%;
 }
-
-
-
-
-
 
 
 /* Footer */

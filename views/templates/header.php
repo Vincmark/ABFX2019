@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo $cssPath.'normalize.css'?>">
     <link rel="stylesheet" href="<?php echo $cssPath.'style.css'?>">
+    <link rel="icon" href="<?php echo $imgPath.'favicon.png'?>" sizes="32x32" type="image/png">
 </head>
 <body>
 

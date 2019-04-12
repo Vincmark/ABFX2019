@@ -1,3 +1,9 @@
+// window.onscroll = function() {
+//     posLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
+//     posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+//     console.log('x=' + posLeft + '\ny=' + posTop);
+// }
+
 var learnMoreButton = document.querySelector('.about__learn-more-button');
 var showMoreButton = document.querySelector('.portfolio__show-more-button');
 var sendRequestButton = document.querySelector('.request_form__send-request-button');
@@ -147,7 +153,7 @@ function requestState(r) {
             if(r.responseText === "OK"){
                 overlay.classList.add("show");
                 popupHeader.innerHTML="Thank you!";
-                popupMessage.innerHTML="Your request will be processed soon.";
+                popupMessage.innerHTML="Your request will be processed soon. Your request will be processed soon. Your request will be processed soon.";
                 requestPopup.classList.add("request-popup_show");
             }
         } else {

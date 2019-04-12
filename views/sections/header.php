@@ -1,4 +1,7 @@
-<header class="header">
-    <img class="header__logo" src="<?php echo $imgPath.'logo.svg'?>" alt="ABFX logo" height="54" width="143">
-    <button class="header__button button-transparent">Request a Quote</button>
+<header class="small-header">
+    <div class="small-header-wrapper">
+        <img class="header__logo" src="<?php echo $imgPath.'logo.svg'?>" alt="ABFX logo" height="54" width="143">
+        <a class="header__button button-transparent" id="id-small-header-button" href="#">Request a Quote</a>
+    </div>
 </header>
+

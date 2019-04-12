@@ -61,5 +61,3 @@
         </section>
     </div>
 </footer>
-
-<div class="overlay"></div>

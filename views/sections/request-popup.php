@@ -1,5 +1,6 @@
-<section class="request" id="id_request">
-    <div class="request-wrapper">
+<section class="request-form-popup" id="id-request-form-popup">
+    <div class="request-form-popup-wrapper">
+        <button class="request-form-popup__close-cross" id="id-request-form-popup__close-cross"></button>
         <h2 class="request__header header2">Contact us</h2>
         <p class="request__text">Send us a question or a description of your idea and we will prepare an individual offer for you.</p>
         <form class="request_form" action="index.html" method="post" name="request-form" id="id-request-form">

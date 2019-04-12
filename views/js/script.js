@@ -4,6 +4,9 @@
 //     console.log('x=' + posLeft + '\ny=' + posTop);
 // }
 
+
+///////////////////////////////////////////////////////////
+
 var learnMoreButton = document.querySelector('.about__learn-more-button');
 var showMoreButton = document.querySelector('.portfolio__show-more-button');
 var sendRequestButton = document.querySelector('.request_form__send-request-button');
@@ -24,6 +27,56 @@ var messageInputError = document.getElementById("id-request-message-error");
 
 var popupHeader = document.getElementById("id-request-popup-header");
 var popupMessage = document.getElementById("id-request-popup-message");
+
+///////////////////////////////////////////////////////////
+
+var headerRequestButton = document.getElementById("id-small-header-button");
+var requestFormPopup = document.getElementById("id-request-form-popup");
+var requestFormPopupCloseCross = document.getElementById("id-request-form-popup__close-cross");
+
+///////////////////////////////////////////////////////////
+
+if (headerRequestButton!==null) {
+    headerRequestButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        showOverlay();
+        showRequestPopupForm();
+        console.log("Small Header Button");
+    });
+}
+
+if (requestFormPopupCloseCross!==null) {
+    requestFormPopupCloseCross.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        hideRequestPopupForm();
+        hideOverlay();
+        console.log("Small Header Button");
+    });
+}
+
+// Show Request Popup Form
+function showRequestPopupForm() {
+    requestFormPopup.classList.add("show");
+}
+
+// Hide Request Popup Form
+function hideRequestPopupForm() {
+    requestFormPopup.classList.remove("show");
+}
+
+// Show Request Popup Message
+// Hide Request Popup Message
+// Show Overlay
+function showOverlay(){
+    overlay.classList.add("show");
+}
+// Hide Overlay
+function hideOverlay(){
+    overlay.classList.remove("show");
+}
+// Show Spinner
+// Hide Spinner
+
 
 if (nameInput!==null) {
     nameInput.addEventListener('focus', function (evt) {

@@ -6,12 +6,14 @@ $imgPath='views/img/';
 $pageTitle='ABFX';
 $uri = $_SERVER['REQUEST_URI'];
 $host = $_SERVER['HTTP_HOST'];
+$innerPage = true;
 if ($uri == '/user') {
 echo 'GOOD request: ' . $uri;
 echo '<pre>';
 print_r(get_defined_vars());
 echo '</pre>';
 } else if ($uri == '/') {
+    $innerPage = false;
     require("views/home.php");
 } else if ($uri == '/privacy-policy') {
     require("views/privacy_policy.php");

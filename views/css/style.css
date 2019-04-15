@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio-wrapper {
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 70px 15px;
     margin: 0 auto;
 }
@@ -403,7 +403,6 @@ input[type="radio"].visually-hidden {
     padding-top: 25px;
 }
 .request_form__send-request-button {
-    /*min-width: 330px;*/
     max-width: 330px;
     width: 100%;
     margin: 35px auto 0 auto;
@@ -499,7 +498,7 @@ input[type="radio"].visually-hidden {
 
 
 .request-form-popup {
-    position: absolute;
+    position: fixed;
     display: none;
     color: #ffffff;
     background-color: #4b869f;
@@ -511,6 +510,8 @@ input[type="radio"].visually-hidden {
     z-index: 10;
     max-width: 690px;
     width: calc(100% - 60px);
+
+
 }
 .request-form-popup-wrapper {
     position: relative;

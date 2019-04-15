@@ -33,6 +33,8 @@ var popupMessage = document.getElementById("id-request-popup-message");
 var headerRequestButton = document.getElementById("id-small-header-button");
 var requestFormPopup = document.getElementById("id-request-form-popup");
 var requestFormPopupCloseCross = document.getElementById("id-request-form-popup__close-cross");
+var footerRequestButton = document.getElementById("id-footer-upper__send-message-button");
+
 
 ///////////////////////////////////////////////////////////
 
@@ -50,6 +52,15 @@ if (requestFormPopupCloseCross!==null) {
         evt.preventDefault();
         hideRequestPopupForm();
         hideOverlay();
+        console.log("Small Header Button");
+    });
+}
+
+if (footerRequestButton!==null) {
+    footerRequestButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        showOverlay();
+        showRequestPopupForm();
         console.log("Small Header Button");
     });
 }

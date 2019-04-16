@@ -922,17 +922,17 @@ input[type="radio"].visually-hidden {
 
 
 
-.legal-content{
+.legal-content, .terms-content{
 
 }
-.legal-content-wrapper {
+.legal-content-wrapper, .terms-content-wrapper {
     max-width: 750px;
     width:100%;
     padding: 25px 30px 60px 30px;
     margin: 0 auto;
 }
 
-.legal-content__h1 {
+.legal-content__h1, .terms-content__h1 {
     font-family: "Galette-Medium", Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1006,6 +1006,36 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
+.terms-content__list {
+    list-style: none;
+    counter-reset: li;
+}
+.terms-content__item:before, .terms-content__parent-item:before {
+    counter-increment: li;
+    content: counters(li,".") ". ";
+}
+
+.terms-content__parent-item {
+    font-family: "Galette-Medium", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: normal;
+    color: #424242;
+    padding: 30px 0 15px 0;
+}
+.terms-content__item, .terms-content__inner-item {
+    font-family: "Helvetica-Light", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #424242;
+    padding: 10px 0px;
+}
+
+.terms-content__inner-list {
+    list-style: lower-alpha;
+    margin-left: 55px;
+
+}
 
 .not-found{
 

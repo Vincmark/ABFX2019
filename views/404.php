@@ -1,4 +1,9 @@
 <?php
 include("templates/header.php");
-echo "<h1>404</h1>";
+include("sections/header.php");
+include("sections/404.php");
+include("sections/request-popup.php");
+include("sections/message-popup.php");
+include("sections/overlay-popup.php");
+include("sections/footer.php");
 include("templates/footer.php");

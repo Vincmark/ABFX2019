@@ -22,5 +22,9 @@ echo '</pre>';
 } else if ($uri == '/contact-request') {
     require("views/contact-request.php");
 } else {
-echo "404";
+
+//    header("HTTP/1.0 404 Not Found");
+    http_response_code(404);
+    require("views/404.php");
+    die;
 }

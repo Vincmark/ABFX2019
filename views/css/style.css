@@ -1006,6 +1006,55 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
+
+.not-found{
+
+}
+
+.not-found-wrapper{
+    max-width: 750px;
+    width:100%;
+    padding: 80px 30px 70px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found__img{
+    max-width: 341px;
+    width: 100%;
+}
+
+.not-found__h1{
+    font-family: "Galette-Medium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: normal;
+    text-align: center;
+    color: #424242;
+    margin: 0;
+
+    padding-top: 40px;
+}
+.not-found__p{
+    font-family: "Helvetica-Light", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    color: #424242;
+    padding-top: 25px;
+    text-align: center;
+}
+.not-found__home-button{
+    max-width: 330px;
+    width: 100%;
+
+    margin-top: 40px;
+}
+
+
 .show {
     display: block;
 }
+

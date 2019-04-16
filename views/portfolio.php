@@ -1,0 +1,10 @@
+<?php
+include("templates/header.php");
+include("sections/portfplio-item.php.php");
+include("sections/about.php");
+include("sections/portfolio.php");
+include("sections/request.php");
+include("sections/footer.php");
+include("sections/message-popup.php");
+include("sections/overlay-popup.php");
+include("templates/footer.php");

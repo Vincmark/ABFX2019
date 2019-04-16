@@ -1,9 +1,13 @@
 <section class="bread-crumbs">
     <div class="bread-crumbs-wrapper">
         <ul class="bread-crumbs__list">
-            <li class="bread-crumbs__item bread-crumbs__item-link"><a class="bread-crumbs__link" href="/">Home</a></li>
-            <li class="bread-crumbs__item bread-crumbs__item-current">Terms of use</li>
-            <li class="bread-crumbs__item"></li>
+            <?php foreach ($breadCrumbs as $value): ?>
+                <?php if($value['type'] === 'link'): ?>
+                    <li class="bread-crumbs__item bread-crumbs__item-link"><a class="bread-crumbs__link" href="<?= $value['url'] ?>"><?= $value['title'] ?></a></li>
+                <?php else:  ?>
+                    <li class="bread-crumbs__item bread-crumbs__item-current"><?= $value['title'] ?></li>
+                <?php endif; ?>
+            <?php endforeach;?>
         </ul>
     </div>
 </section>

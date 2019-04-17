@@ -1005,7 +1005,9 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/gray-rect.svg");
     background-repeat: no-repeat;
 }
-
+.terms-content__h1 {
+    padding: 0;
+}
 .terms-content__list {
     list-style: none;
     counter-reset: li;
@@ -1013,6 +1015,7 @@ input[type="radio"].visually-hidden {
 .terms-content__item:before, .terms-content__parent-item:before {
     counter-increment: li;
     content: counters(li,".") ". ";
+    padding-right: 10px;
 }
 
 .terms-content__parent-item {
@@ -1021,19 +1024,24 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
     line-height: normal;
     color: #424242;
-    padding: 30px 0 15px 0;
+    padding: 30px 0 0 0;
 }
 .terms-content__item, .terms-content__inner-item {
     font-family: "Helvetica-Light", Arial, sans-serif;
     font-size: 18px;
     line-height: 28px;
     color: #424242;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.terms-content__inner-item {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 0 5px;
 }
 
 .terms-content__inner-list {
     list-style: lower-alpha;
-    margin-left: 55px;
+    margin-left: 85px;
 
 }
 

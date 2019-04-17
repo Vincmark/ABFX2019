@@ -1,4 +1,7 @@
 <?php
+$pageTitle='Privacy policy — ABFX';
+$pageDescription='';
+$breadCrumbs[] = ['title' => 'Privacy policy', 'url' => '', 'type' => 'last'];
 include("templates/header.php");
 include("sections/header.php");
 include("sections/bread-crumbs.php");

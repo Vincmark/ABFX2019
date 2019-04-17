@@ -1,4 +1,7 @@
 <?php
+$pageTitle='Terms of use — ABFX';
+$pageDescription='';
+$breadCrumbs[] = ['title' => 'Terms of use', 'url' => '', 'type' => 'last'];
 include("templates/header.php");
 include("sections/header.php");
 include("sections/bread-crumbs.php");

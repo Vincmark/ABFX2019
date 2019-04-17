@@ -1,22 +1,50 @@
 <?php
 
-$cssPath='views/css/';
-$jsPath='views/js/';
-$imgPath='views/img/';
+$cssPath = 'http://'.$_SERVER['HTTP_HOST'].'/views/css/';
+$jsPath = 'http://'.$_SERVER['HTTP_HOST'].'/views/js/';
+$imgPath = 'http://'.$_SERVER['HTTP_HOST'].'/views/img/';
 $uri = $_SERVER['REQUEST_URI'];
 $host = $_SERVER['HTTP_HOST'];
 $innerPage = true;
+//$arr = get_defined_vars();
+//echo "<pre>";
+//print_r($arr);
+//echo "</pre>";
+
+
+echo "<pre>";
+print_r($uri);
+echo "</pre>";
+
+$s = trim($uri,"/");
+
+echo "<pre>";
+print_r($s);
+echo "</pre>";
+
+
+$urlParts = explode('/',$s);
+echo "<pre>";
+print_r($urlParts);
+echo "</pre>";
+
+
 $breadCrumbs = [
     [   'title' => 'Home',
         'url' => '/',
         'type' => 'link']
 ];
 
+$portfolioList = [
+    ['id' => '1',
+    'url' => 'monfex-trade-platform',
+    'pageTitle' => 'Monfex Trade Platform — ABFX',
+    'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
+    'section' => 'p1.php']
+];
+
 if ($uri == '/user') {
-echo 'GOOD request: ' . $uri;
-echo '<pre>';
-print_r(get_defined_vars());
-echo '</pre>';
+
 } else if ($uri == '/') {
     $pageTitle='ABFX';
     $innerPage = false;
@@ -33,9 +61,10 @@ echo '</pre>';
     $breadCrumbs[] = ['title' => 'Terms of use', 'url' => '', 'type' => 'last'];
     require("views/terms_of_use.php");
 } else if ($uri == '/contact-request') {
-    require("views/contact-request.php");
+    require("views/api/contact-request.php");
+} else if ($uri == '/portfolio') {
+    require("views/api/contact-request.php");
 } else {
-//    header("HTTP/1.0 404 Not Found");
     http_response_code(404);
     require("views/404.php");
     die;

@@ -8,11 +8,4 @@
 
 
     require("controllers/"."$currentController");
-//    echo "<pre>";
-//    var_dump($uriParts);
-//    var_dump($currentController);
-//    var_dump($currentView);
-//    echo "<pre>";
-//    echo $hey;
-
     require("views/"."$currentView");

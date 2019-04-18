@@ -6,7 +6,7 @@
     }
 
     function getController($uriParts){
-        $controller = '';
+
 
         if (($uriParts[0] === '')&&(count($uriParts) === 1)){
             $controller = 'home-controller.php';
@@ -18,6 +18,8 @@
         }
         elseif (($uriParts[0] === 'portfolio')&&(count($uriParts) === 2)) {
             $controller = 'portfolio-controller.php';
+        } else {
+            $controller = '404.php';
         }
         return $controller;
     }

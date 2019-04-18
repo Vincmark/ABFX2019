@@ -1,27 +1,24 @@
 <?php
-function prepareUrl($uri) {
-    $s = trim($uri,"/");
-    $urlParts = explode('/',$s);
-    return $
-}
+    function prepareUrl($uri, &$uriParts) {
 
-function Router(){
-//    if ($uri == '/') {
-//        require("views/home.php");
-//    } else if ($uri == '/privacy-policy') {
-//        require("views/privacy_policy.php");
-//    } else if ($uri == '/terms-of-use') {
-//        require("views/terms_of_use.php");
-//    } else if ($uri == '/contact-request') {
-//        require("views/api/contact-request.php");
-//    } else if ($uri == '/portfolio') {
-//        require("views/api/contact-request.php");
-//    } else {
+        $s = trim($uri,"/");
+        $uriParts = explode('/',$s);
+    }
 
-}
+    function getController($uriParts){
+        $controller = '';
 
-function throw404(){
-    http_response_code(404);
-    require("views/404.php");
-    die;
-}
+        if (($uriParts[0] === '')&&(count($uriParts) === 1)){
+            $controller = 'home-controller.php';
+        } elseif (($uriParts[0] === 'terms-of-use')&&(count($uriParts) === 1)) {
+            $controller = 'terms-of-use-controller.php';
+        }
+        elseif (($uriParts[0] === 'privacy-policy')&&(count($uriParts) === 1)) {
+            $controller = 'privacy-policy-controller.php';
+        }
+        elseif (($uriParts[0] === 'portfolio')&&(count($uriParts) === 2)) {
+            $controller = 'portfolio-controller.php';
+        }
+        return $controller;
+    }
+

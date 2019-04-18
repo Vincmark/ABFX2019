@@ -1,4 +1,5 @@
 <?php
+http_response_code(404);
 include("templates/header.php");
 include("sections/header.php");
 include("sections/404.php");

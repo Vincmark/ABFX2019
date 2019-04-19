@@ -2,7 +2,7 @@
     <div class="splash-wrapper">
         <h1 class="visually-hidden">ABFX official website</h1>
         <header class="header">
-            <img class="header__logo" src="<?php echo $imgPath.'logo.svg'?>" alt="ABFX logo" height="54" width="143">
+            <img class="header__logo" src="<?= $imgPath.'logo.svg'?>" alt="ABFX logo" height="54" width="143">
             <a class="header__button button-transparent" href="#id_request">Request a Quote</a>
         </header>
         <div class="splash-content">

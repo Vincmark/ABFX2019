@@ -133,6 +133,28 @@ input[type="radio"].visually-hidden {
     color: #424242;
 }
 
+.header3 {
+    font-family: "Galette-Medium", Arial, sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+
+    color: #424242;
+}
+
+.header4 {
+    font-family: "Galette-Medium", Arial, sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+
+    color: #424242;
+}
+
 /* Header*/
 
 .small-header {
@@ -278,8 +300,15 @@ input[type="radio"].visually-hidden {
     padding-right: 30px;
     margin: 0 auto;
 }
-.about__header {
+.about__header2 {
     padding-top: 70px;
+}
+.about__header3 {
+    padding-top: 40px;
+}
+.about__header4 {
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 .about__text {
     font-family: "Helvetica-Light", Arial, sans-serif;
@@ -297,6 +326,30 @@ input[type="radio"].visually-hidden {
     margin: 50px auto 0 auto;
     color: #424242;
     min-width: 330px;
+}
+.about__stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.about__stack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.about__stack-img {
+    padding-bottom: 12px;
+
+}
+.about__stack-text {
+    font-family: "Helvetica-Light", Arial, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+
+    color: #424242;
+
 }
 
 @media screen and (max-width: 390px) {

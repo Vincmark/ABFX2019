@@ -1,7 +1,5 @@
 <?php
 
-$currentView = 'portfolio.php';
-$var1 = "123";
 
 //$portfolio = '';
 //foreach ($portfolioList as $value) {
@@ -9,4 +7,16 @@ $var1 = "123";
 //        $portfolio
 //    }
 //}
+
+// Check for portfolio item
+
+// Setup variables
+$pageTitle='';
+$pageDescription='';
+$currentView = 'portfolio.php';
+
+
+
+
+
 

@@ -9,67 +9,67 @@ $breadCrumbs = [
 $portfolioList = [
     [   'id' => '1',
         'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio1.png',
+        'previewImg' => 'preview-monfex.png',
         'previewImgAlt' => '',
         'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
+        'pageDescription' => 'Monfex Trade Platform designed by ABFX.',
         'section' => 'p1.php'
     ],
     [   'id' => '2',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio2.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'top-coin-markets',
+        'previewImg' => 'preview-topcoinmarkets.png',
+        'pageTitle' => 'Top Coin Markets — ABFX',
+        'pageDescription' => 'Top Coin Markets crypto exchanges directory developed by ABFX.',
+        'section' => 'p2.php'
     ],
     [   'id' => '3',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio3.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'hr-graph',
+        'previewImg' => 'preview-hrgraph.png',
+        'pageTitle' => 'HR Graph — ABFX',
+        'pageDescription' => 'HR Graph visualisation tool developed by ABFX',
+        'section' => 'p3.php'
     ],
     [   'id' => '4',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio4.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'altcoinstat',
+        'previewImg' => 'preview-altcoinstat.png',
+        'pageTitle' => 'Altcoinst — ABFX',
+        'pageDescription' => 'Altcoinstat crypto directory designed by ABFX.',
+        'section' => 'p4.php'
     ],
     [   'id' => '5',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio5.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'lqedge',
+        'previewImg' => 'preview-lqedge.png',
+        'pageTitle' => 'LQEdge — ABFX',
+        'pageDescription' => 'LQEdge wizard designed and developed by ABFX.',
+        'section' => 'p5.php'
     ],
     [   'id' => '6',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio6.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'directory',
+        'previewImg' => 'preview-directory.png',
+        'pageTitle' => 'Directory — ABFX',
+        'pageDescription' => 'Directory platform designed and developed by ABFX.',
+        'section' => 'p6.php'
     ],
     [   'id' => '7',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio7.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'marry-me',
+        'previewImg' => 'preview-marryme.png',
+        'pageTitle' => 'Marry Me - International Datin Service — ABFX',
+        'pageDescription' => 'Marry Me - International Datin Service designed and developed by ABFX.',
+        'section' => 'p7.php'
     ],
     [   'id' => '8',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio8.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'nekstream',
+        'previewImg' => 'preview-nekstream.png',
+        'pageTitle' => 'Nekstream — ABFX',
+        'pageDescription' => 'Nekstream designed and developed by ABFX.',
+        'section' => 'p8.php'
     ],
     [   'id' => '9',
-        'uri' => 'monfex-trade-platform',
-        'previewImg' => 'portfolio9.png',
-        'pageTitle' => 'Monfex Trade Platform — ABFX',
-        'pageDescription' => 'Monfex Trade Platform design made by ABFX web development company.',
-        'section' => 'p1.php'
+        'uri' => 'airbionicfx',
+        'previewImg' => 'preview-airbionicfx.png',
+        'pageTitle' => 'AirBionicFX — ABFX',
+        'pageDescription' => 'AirBionicFX Metatrader programming service designed and developed by ABFX.',
+        'section' => 'p9.php'
     ]
 ];
 

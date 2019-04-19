@@ -1,6 +1,6 @@
 <?php
 include("templates/header.php");
 include("sections/header.php");
-echo $var1;
+require("sections/portfolio-item.php");
 include("sections/footer.php");
 include("templates/footer.php");

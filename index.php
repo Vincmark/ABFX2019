@@ -6,6 +6,5 @@
     prepareUrl($uri, $uriParts);
     $currentController = getController($uriParts);
 
-
     require("controllers/"."$currentController");
     require("views/"."$currentView");

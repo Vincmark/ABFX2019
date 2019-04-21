@@ -5,6 +5,7 @@
 // }
 
 
+
 ///////////////////////////////////////////////////////////
 
 var learnMoreButton = document.querySelector('.about__learn-more-button');
@@ -35,8 +36,34 @@ var requestFormPopup = document.getElementById("id-request-form-popup");
 var requestFormPopupCloseCross = document.getElementById("id-request-form-popup__close-cross");
 var footerRequestButton = document.getElementById("id-footer-upper__send-message-button");
 
+var toTopButton = document.getElementById("id-to-top-button");
 
 ///////////////////////////////////////////////////////////
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        if (toTopButton!==null) {
+            toTopButton.style.display = "block";
+        }
+
+    } else {
+        if (toTopButton!==null) {
+            toTopButton.style.display = "none";
+        }
+    }
+}
+
+
+if (toTopButton!==null) {
+    toTopButton.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        console.log("To Top Button");
+    });
+}
 
 if (headerRequestButton!==null) {
     headerRequestButton.addEventListener('click', function (evt) {

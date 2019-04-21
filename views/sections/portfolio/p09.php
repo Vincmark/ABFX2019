@@ -1,1 +1,1 @@
-<?php
+<img src="<?= $imgPath . 'portfolio-airbionicfx.png' ?>" alt="">

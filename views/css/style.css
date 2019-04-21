@@ -423,6 +423,18 @@ input[type="radio"].visually-hidden {
     }
 }
 
+.portfolio-content-wrapper{
+    max-width: 1460px;
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+.portfolio-content__img{
+    max-width: 1400px;
+    width: 100%;
+    /*border: 1px solid tomato;*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 
 
@@ -1143,6 +1155,55 @@ input[type="radio"].visually-hidden {
 
     margin-top: 40px;
 }
+
+
+/*To Top Button*/
+
+.to-top-button {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(246, 187, 50, 0.4) ;
+    background-image: url("../img/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
+    border-radius: 1px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: 600px;
+    cursor: pointer;
+}
+
+.to-top-button:hover {
+    background-color: #F6BB32;
+    background-image: url("../img/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.to-top-button:active {
+    background-color: #F6BB32;
+    background-image: url("../img/arrow-up.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .to-top-button {
+        margin-left: 0;
+        left: auto;
+        right: 30px;
+    }
+}
+
+
+
+
+
+
 
 
 .show {

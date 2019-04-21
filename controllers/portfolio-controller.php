@@ -1,22 +1,18 @@
 <?php
 
+$currentPortfolioSection = '';
 
-//$portfolio = '';
-//foreach ($portfolioList as $value) {
-//    if ($uriParts[1] === $value['uri']) {
-//        $portfolio
-//    }
-//}
+foreach ($portfolioList as $portfolio) {
+    if ($portfolio['uri'] === $uriParts[1]){
+        $pageTitle = $portfolio['pageTitle'];
+        $pageDescription = $portfolio['pageDescription'];
+        $currentView = 'portfolio.php';
+        $currentPortfolioSection = $portfolio['section'];
+        $breadCrumbs[] = ['title' => $portfolio['title'], 'url' => '', 'type' => 'last'];
+    }
+}
 
-// Check for portfolio item
-
-// Setup variables
-$pageTitle='';
-$pageDescription='';
-$currentView = 'portfolio.php';
-
-
-
-
-
-
+if ($currentPortfolioSection === ''){
+    $currentController = '404-controller.php';
+    require ('404-controller.php');
+}

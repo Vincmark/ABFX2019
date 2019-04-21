@@ -1,3 +1,3 @@
 <?php
 
-require ("portfolio/p01.php");
+require ("portfolio/".$currentPortfolioSection);

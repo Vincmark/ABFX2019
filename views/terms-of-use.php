@@ -6,5 +6,6 @@ include("sections/terms-of-use.php");
 include("sections/request-popup.php");
 include("sections/message-popup.php");
 include("sections/overlay-popup.php");
+include("sections/to-top-button.php");
 include("sections/footer.php");
 include("templates/footer.php");

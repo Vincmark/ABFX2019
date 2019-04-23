@@ -16,10 +16,13 @@
         elseif (($uriParts[0] === 'privacy-policy')&&(count($uriParts) === 1)) {
             $controller = 'privacy-policy-controller.php';
         }
+        elseif (($uriParts[0] === 'contact-request')&&(count($uriParts) === 1)) {
+            $controller = 'contact-request-controller.php';
+        }
         elseif (($uriParts[0] === 'portfolio')&&(count($uriParts) === 2)) {
             $controller = 'portfolio-controller.php';
         } else {
-            $controller = '404.php';
+            $controller = '404-controller.php';
         }
         return $controller;
     }

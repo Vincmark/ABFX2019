@@ -1,21 +1,14 @@
-// window.onscroll = function() {
-//     posLeft = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
-//     posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-//     console.log('x=' + posLeft + '\ny=' + posTop);
-// }
-
-
 
 ///////////////////////////////////////////////////////////
 
 var learnMoreButton = document.querySelector('.about__learn-more-button');
 var showMoreButton = document.querySelector('.portfolio__show-more-button');
-var sendRequestButton = document.querySelector('.request_form__send-request-button');
+var sendRequestButton = document.getElementById('id-send-request-button');
 
-var popupCrossButton = document.querySelector('.request-popup__close-cross');
-var popupCloseButton = document.querySelector('.request-popup__close-button');
+var popupCrossButton = document.querySelector('.message-popup__close-cross');
+var popupCloseButton = document.querySelector('.message-popup__close-button');
 
-var requestPopup = document.querySelector('.request-popup');
+var messagePopup = document.querySelector('.message-popup');
 var overlay = document.querySelector('.overlay');
 
 var nameInput = document.getElementById("id-request-name");
@@ -26,8 +19,8 @@ var nameInputError = document.getElementById("id-request-name-error");
 var emailInputError = document.getElementById("id-request-email-error");
 var messageInputError = document.getElementById("id-request-message-error");
 
-var popupHeader = document.getElementById("id-request-popup-header");
-var popupMessage = document.getElementById("id-request-popup-message");
+var popupHeader = document.getElementById("id-message-popup-header");
+var popupMessage = document.getElementById("id-message-popup-message");
 
 ///////////////////////////////////////////////////////////
 
@@ -68,7 +61,6 @@ if (toTopButton!==null) {
 if (headerRequestButton!==null) {
     headerRequestButton.addEventListener('click', function (evt) {
         evt.preventDefault();
-        showOverlay();
         showRequestPopupForm();
         console.log("Small Header Button");
     });
@@ -78,7 +70,6 @@ if (requestFormPopupCloseCross!==null) {
     requestFormPopupCloseCross.addEventListener('click', function (evt) {
         evt.preventDefault();
         hideRequestPopupForm();
-        hideOverlay();
         console.log("Small Header Button");
     });
 }
@@ -86,7 +77,6 @@ if (requestFormPopupCloseCross!==null) {
 if (footerRequestButton!==null) {
     footerRequestButton.addEventListener('click', function (evt) {
         evt.preventDefault();
-        showOverlay();
         showRequestPopupForm();
         console.log("Small Header Button");
     });
@@ -104,14 +94,6 @@ function hideRequestPopupForm() {
 
 // Show Request Popup Message
 // Hide Request Popup Message
-// Show Overlay
-function showOverlay(){
-    overlay.classList.add("show");
-}
-// Hide Overlay
-function hideOverlay(){
-    overlay.classList.remove("show");
-}
 // Show Spinner
 // Hide Spinner
 
@@ -198,7 +180,8 @@ if (sendRequestButton!==null) {
 
         if (error === true)
             return;
-        sendRequest("name="+name+"&email="+email+"&message="+message);
+         sendRequest("name="+name+"&email="+email+"&message="+message);
+         console.log("AJAX finished");
     });
 }
 
@@ -210,7 +193,7 @@ function isEmail(email){
 if (popupCrossButton!==null) {
     popupCrossButton.addEventListener('click', function (evt) {
         evt.preventDefault();
-        requestPopup.classList.remove("request-popup_show");
+        messagePopup.classList.remove("message-popup_show");
         overlay.classList.remove("show");
         console.log("Popup Cross Button");
     });
@@ -219,7 +202,7 @@ if (popupCrossButton!==null) {
 if (popupCloseButton!==null) {
     popupCloseButton.addEventListener('click', function (evt) {
         evt.preventDefault();
-        requestPopup.classList.remove("request-popup_show");
+        messagePopup.classList.remove("message-popup_show");
         overlay.classList.remove("show");
         console.log("Popup Close Button");
     });
@@ -236,19 +219,24 @@ function sendRequest(params){
     request.send(params);
 }
 
+
 function requestState(r) {
-    console.log(r.readyState);
+    //console.log(r.readyState);
     if (r.readyState === 4) {
         if (r.status === 200) {
             console.log(r.responseText);
             if(r.responseText === "OK"){
-                overlay.classList.add("show");
-                popupHeader.innerHTML="Thank you!";
-                popupMessage.innerHTML="Your request will be processed soon. Your request will be processed soon. Your request will be processed soon.";
-                requestPopup.classList.add("request-popup_show");
+                showMessage("Thank you!", "Your request will be processed soon. Your request will be processed soon. Your request will be processed soon.");
             }
         } else {
             alert('С запросом возникла проблема.');
         }
     }
+}
+
+
+function showMessage(header, message){
+    popupHeader.innerHTML=header;
+    popupMessage.innerHTML=message;
+    messagePopup.classList.add("message-popup_show");
 }

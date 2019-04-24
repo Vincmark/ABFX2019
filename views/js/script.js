@@ -57,8 +57,10 @@ var messagePopup = document.querySelector('.message-popup');
 var popupHeader = document.getElementById("id-message-popup-header");
 var popupMessage = document.getElementById("id-message-popup-message");
 
-
-
+// --------------------------------------------------------
+// Spinner popup
+// --------------------------------------------------------
+var spinnerPopup = document.getElementById("id-spinner-popup");
 
 // --------------------------------------------------------
 // To Top Button
@@ -121,9 +123,10 @@ if (requestFormPopupCloseCross!==null) {
 if (sendRequestButton!==null) {
     sendRequestButton.addEventListener('click', function (evt) {
         evt.preventDefault();
-        if (validateRequestForm()){
-            sendRequestToServer("name="+nameInputValue+"&email="+emailInputValue+"&message="+messageInputValue);
-        }
+        showSpinnerPopup();
+        // if (validateRequestForm()){
+        //     sendRequestToServer("name="+nameInputValue+"&email="+emailInputValue+"&message="+messageInputValue);
+        // }
     });
 }
 
@@ -131,9 +134,10 @@ if (sendRequestButton!==null) {
 if (sendRequestButtonPopup!==null) {
     sendRequestButtonPopup.addEventListener('click', function (evt) {
         evt.preventDefault();
-        if (validateRequestForm()){
-            sendRequestToServer("name="+nameInputValue+"&email="+emailInputValue+"&message="+messageInputValue);
-        }
+        showSpinnerPopup();
+        // if (validateRequestForm()){
+        //     sendRequestToServer("name="+nameInputValue+"&email="+emailInputValue+"&message="+messageInputValue);
+        // }
     });
 }
 
@@ -305,7 +309,31 @@ if (popupCloseButton!==null) {
 // --------------------------------------------------------
 // Spinner
 // --------------------------------------------------------
+// // Show Spinner
+// if (spinnerPopup!==null) {
+//     spinnerPopup.addEventListener('click', function (evt) {
+//         evt.preventDefault();
+//         showRequestPopupForm();
+//     });
+// }
+//
+// // Hide Spinner
+// if (requestFormPopupCloseCross!==null) {
+//     requestFormPopupCloseCross.addEventListener('click', function (evt) {
+//         evt.preventDefault();
+//         hideRequestPopupForm();
+//     });
+// }
 
+// Show Request Popup Form
+function showSpinnerPopup() {
+    spinnerPopup.classList.add("show");
+}
+
+// Hide Request Popup Form
+function hideSpinnerPopup() {
+    spinnerPopup.classList.remove("show");
+}
 
 
 

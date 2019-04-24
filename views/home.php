@@ -6,4 +6,5 @@ include("sections/portfolio.php");
 include("sections/request.php");
 include("sections/footer.php");
 include("sections/message-popup.php");
+include("sections/spinner-popup.php");
 include("templates/footer.php");
